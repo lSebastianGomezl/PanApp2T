@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="StyleSheet" href="/estilos/estilo.css">
+  <title>Panaderias</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body style="background-color: #eed09d;">
+  <ul class="nav justify-content-end" style="background-color: #eed09d;">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="/" style="color: black;"><u>Inicio</u></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="productos" style="color: black;"><u>Productos</u></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="panaderias" style="color: black;"><u>Panaderias</u></a>
+    </li>
+    {% if mostrar_login%}
+    <li class="nav-item">
+      <a class="nav-link" href="formularioregistro" style="color: black;"><u>Registrar</u></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="formulariologin" style="color: black;"><u>Iniciar Sesion</u></a>
+    </li>
+    {% endif %}
+    <li class="nav-item">
+      <a class="nav-link" href="carrito" style="color: black;"><u>Carrito</u></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="cerrar" style="color: black;"><u>Cerrar Sesión</u></a>
+    </li>
+  </ul>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" style="text-align: center; background-color: #eed09d;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+      <h1>Panaderias</h1>
+    <div style="border: 5px solid #eed09d;">
+      <div class="carousel-item active">
+        <img src="/static/padaneriaConfiteria.jpg" class="d-block w-100" alt="croazanes" style="width: 500px; height: 500px;">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/panaderiaBianco.jpg" class="d-block w-100" alt="buñuelos" style="width: 500px; height: 500px;">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/panaderiaOhana.jpg" class="d-block w-100" alt="pandebono" style="width: 500px; height: 500px;">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/padaneriaConfiteria.jpg" class="d-block w-100" alt="pandebono" style="width: 500px; height: 500px;">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/panaderiaEspecialita.jpg" class="d-block w-100" alt="pandebono" style="width: 500px; height: 500px;">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/panaderiaLaDuquesita.jpg" class="d-block w-100" alt="pandebono" style="width: 500px; height: 500px;">
+      </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--<div class="card" style="width: 18rem; margin-top: 30px; position: relative; border: 1px solid;border-radius: 5px; margin-left: 10px;" >
+    <img src="https://www.dietdoctor.com/es/wp-content/uploads/2018/01/DD-129-2-200x200.jpg" class="card-img-top" alt="pancoco" style="padding: 10px;">
+    <div class="card-body" >
+      <h5 class="card-title"><b>Pan Coco</b></h5>
+      <h6 class="card-text"><b>Cantidad disponible: </b></h6>
+      <h6 class="card-text"><b>Tiempo de estado: </b></h6>
+      <h6 class="card-text"><b>Valor: </b></h6>
+      <div style="text-align: center;">
+      <a href="#" class="btn btn-primary">Ver</a>
+    </div>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; margin-top: 30px; position: relative; border: 1px solid;border-radius: 5px; margin-left:10px;" >
+    <img src="https://bakeitwithlove.com/wp-content/uploads/2016/04/Quick-French-Bread-Recipe-sm.png" class="card-img-top" alt="panfances" style="padding: 10px;">
+    <div class="card-body" >
+      <h5 class="card-title"><b>Pan Frances</b></h5>
+      <h6 class="card-text"><b>Cantidad disponible: </b></h6>
+      <h6 class="card-text"><b>Tiempo de estado: </b></h6>
+      <h6 class="card-text"><b>Valor: </b></h6>
+      <div style="text-align: center;">
+      <a href="#" class="btn btn-primary">Ver</a>
+    </div>
+    </div>
+  </div>-->
+  
+<div class="container">
+  <div class="row">
+
+    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top: 30px;">
+
+      <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="max-width:319px; position: relative; border: 1px solid;border-radius: 5px; margin-bottom: 30px; margin-right: 50px;">
+        <img src="/static/panaderiaOhana2.jpg" class="card-img-top" alt="Card image" style="padding: 10px;" />
+        <div class="card-block">
+          <h4 class="card-title"><b>Ohana Panadería</b></h4>
+          <h6 class="card-text"><b>Direccion:</b> Av. Centenario No.50N-11 Armenia - Qundío</h6>
+          <h6 class="card-text"><b>Teléfono:</b> +57 310 627 0007</h6>
+          <h6 class="card-text"><b>Horarios:</b> Abierto de 12:00 a. m. - 11:59 p. m.</h6>
+        <div style="text-align: center; padding-bottom: 10px;margin: 5px;">
+          <a href="https://www.instagram.com/ohana.panaderia_/?hl=es" target="blank" class="btn btn-dark">Ver</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="max-width:319px; position: relative; border: 1px solid;border-radius: 5px;margin-bottom: 30px; margin-right: 50px;">
+        <img src="/static/panaderiaBianco2.jpg" class="card-img-top" alt="Card image" style="padding: 10px; height: 45%;" />
+        <div class="card-block">
+          <h4 class="card-title"><b>Bianco</b></h4>
+          <h6 class="card-text"><b>Direccion: </b>Carrera 6 # 8 Norte - 40, Armenia Colombia</h6>
+          <h6 class="card-text"><b>Teléfono:</b> 606 7312470</h6>
+          <h6 class="card-text"><b>Horarios de atención:</b> Abierto de 7:00 am a 9:00 pm</h6>
+        <div style="text-align: center; padding-bottom: 10px;margin: 5px;">
+          <a href="https://osteriabianco.com/collections/panetteria" target="blank" class="btn btn-dark">Ver</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="max-width:319px; position: relative; border: 1px solid;border-radius: 5px;margin-bottom: 30px; margin-right: 50px;">
+        <img src="/static/panaderiaEspecialita.jpg" class="card-img-top" alt="Card image" style="padding: 10px; height: 45%;" />
+        <div class="card-block" style="text-align: justify;">
+          <h4 class="card-title"><b>Panes y Pandebonos</b></h4>
+          <h6 class="card-text"><b>Dirección:</b>Carrera 14 No. 11 Armenia Quindío</h6>
+          <h6 class="card-text"><b>Teléfonos:</b> 606 745 0730</h6>
+          <h6 class="card-text"><b>Horarios:</b> De lunes a domingos de 11:00 de la mañana - 10:00 de la noche</h6>
+        <div style="text-align: center; padding-bottom: 10px;margin: 5px;">
+          <a href="https://2pos.org/5288/5004/panes-y-pandebonos" target="blank" class="btn btn-dark">Ver</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="max-width:319px; position: relative; border: 1px solid;border-radius: 5px;margin-bottom: 30px; margin-right: 50px;">
+        <img src="/static/cafequindio.jpg" class="card-img-top" alt="Card image" style="padding: 10px; height: 230px;" />
+        <div class="card-block">
+          <h4 class="card-title"><b>Café Quindío</b></h4>
+          <h6 class="card-text"><b>Avenida Bolivar 7 Parque de la Vida, Armenia Colombia </b></h6>
+          <h6 class="card-text"><b>Teléfono:</b> 606 7454478</h6>
+          <h6 class="card-text"><b>Horarios:</b> De lunes a domingos de 11:00 de la mañana - 10:00 de la noche</h6>
+        <div style="text-align: center; padding-bottom: 10px;margin: 5px;">
+          <a href="https://www.cafequindio.com.co/product-category/pasteleria/" target="blank" class="btn btn-dark">Ver</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="max-width:319px; position: relative; border: 1px solid;border-radius: 5px;margin-bottom: 30px; margin-right: 50px;">
+        <img src="/static/pantolima.jpg" class="card-img-top" alt="Card image" style="padding: 10px; height: 230px;" />
+        <div class="card-block">
+          <h4 class="card-title"><b>Pan Tolima</b></h4>
+          <h6 class="card-text"><b>Dirreccion:</b> Carrera 14 # 14-14 parque municipal</h6>
+          <h6 class="card-text"><b>Teléfono:</b> 606 7411586</h6>
+          <h6 class="card-text"><b>Horarios:</b> De lunes a domingos de 11:00 de la mañana - 10:00 de la noche</h6>
+        <div style="text-align: center; padding-bottom: 10px;margin: 5px;">
+          <a href="https://www.instagram.com/pantolimaarmenialaoriginal/?hl=es" target="blank" class="btn btn-dark">Ver</a>
+        </div>
+        </div>
+      </div>
+      
+      <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="max-width:319px; position: relative; border: 1px solid;border-radius: 5px;margin-bottom: 30px; margin-right: 50px;">
+        <img src="/static/panymiel.jpg" class="card-img-top" alt="Card image" style="padding: 10px;" />
+        <div class="card-block">
+          <h4 class="card-title"><b>Pan y Miel</b></h4>
+          <h6 class="card-text"><b>Dirreccion:</b> Carrera 6 Norte Armenia Quindio</h6>
+          <h6 class="card-text"><b>Teléfono:</b> 606 7478179</h6>
+          <h6 class="card-text"><b>Horarios:</b> De lunes a domingos de 11:00 de la mañana - 20:00 de la noche</h6>
+        <div style="text-align: center; padding-bottom: 10px;margin: 5px;">
+          <a href="https://panymielarmenia.wordpress.com/productos/" target="blank" class="btn btn-dark">Ver</a>
+        </div>
+        </div>
+      </div>
+      <footer style="margin-top: 50px;">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+          © 2020 Copyright:ADSI 2339490 - Developers Team<br>
+          <a class="text-dark" href="http://centrodecomercioyturismo.blogspot.com/" target="blanck">SENA</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

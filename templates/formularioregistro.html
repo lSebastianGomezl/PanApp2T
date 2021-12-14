@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>registrarse</title>
+</head>
+<body style="background-image: url(/static/fondoFormularioRegistro.jpg); width: 100%; height: 100%; position: absolute; background-size: cover;">
+  <ul class="nav justify-content-end" style="background-color: #eed09d;">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="/" style="color: black;"><u>Inicio</u></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="productos" style="color: black;"><u>Productos</u></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="panaderias" style="color: black;"><u>Panaderias</u></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="formularioregistro" style="color: black;"><u>Registrar</u></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="formulariologin" style="color: black;"><u>Iniciar Sesion</u></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="carrito" style="color: black;"><u>Carrito</u></a>
+    </li>
+  </ul>  
+  <form action="/registro" method="POST" style="width: 100%; text-align: center; padding: 200px;">
+    <h1 style="text-align: center;">Registrarse</h1>
+    <div>
+    <div class="row" >
+        <div class="col" style="text-align: center;" >
+            <label for="inputEmail4" class="form-label"><b>Nombre</b></label>
+        <div style="display: flex;align-items: center; justify-content: center;">
+          <input name="nombre" class="form-control" placeholder="Nombre" aria-label="First name" style="font-size: 15px; border-radius: 5px;background:#eed09d;border: 1px solid; max-width: 25%;">
+        </div>
+        </div>
+      </div>
+    <form class="row g-3">
+            <div class="col" style="text-align: center;">
+                <label for="inputEmail4" class="form-label"><b>Apellidos</b></label>
+            <div style="display: flex;align-items: center; justify-content: center;">
+              <input name="apellidos" type="text" class="form-control" placeholder="Apellidos" aria-label="Last name" style="font-size: 15px; border-radius: 5px;background:#eed09d;border: 1px solid; max-width: 25%;">
+            </div>
+        </div>
+        <div class="col" style="text-align: center;">
+          <label for="inputEmail4" class="form-label"><b>Correo Electronico</b></label>
+        <div style="display: flex;align-items: center; justify-content: center;">
+          <input name="correo" type="email" class="form-control" id="inputEmail4" placeholder="Correo electronico" style="font-size: 15px; border-radius: 5px;background:#eed09d;border: 1px solid; max-width: 25%;">
+        </div>
+        </div>
+        <div class="col" style="text-align: center;">
+          <label for="inputPassword4" class="form-label"><b>Contraseña</b></label>
+        <div style="display: flex;align-items: center; justify-content: center;">
+          <input name="password" type="password" class="form-control" id="inputPassword4" placeholder="*********" style="font-size: 15px; border-radius: 5px;background:#eed09d;border: 1px solid; max-width: 25%;">
+        </div>
+        </div>
+        <div class="col" style="text-align: center;">
+          <label for="inputAddress" class="form-label"><b>Dirección</b></label>
+        <div style="display: flex;align-items: center; justify-content: center;">
+            <input name="direccion" type="text" class="form-control" id="inputAddress" placeholder="Dirreccion" style="font-size: 15px; border-radius: 5px;background:#eed09d;border: 1px solid; max-width: 25%;">
+        </div>  
+        </div>
+        <div class="col" style="text-align: center;">
+          <label for="inputCity" class="form-label"><b>Ciudad<b></label>
+        <div style="display: flex;align-items: center; justify-content: center;">
+          <input name="ciudad" type="text" class="form-control" id="inputCity" placeholder="Ciudad" style="font-size: 15px; border-radius: 5px;background:#eed09d;border: 1px solid; max-width: 25%;">
+        </div>
+        </div>
+        <div class="col" style="text-align: center;">
+          <label for="inputDepartament" class="form-label"><b>Departamento</b></label>
+        <div style="display: flex;align-items: center; justify-content: center;">
+          <input name="departamento" type="text" class="form-control" id="inputDepartament" placeholder="Departamento" style="font-size: 15px; border-radius: 5px;background:#eed09d;border: 1px solid; max-width: 25%;">
+        </div>
+        <div style="text-align: center; color:#000">
+          <button type="submit" class="btn btn-dark" style="margin-top: 10px;"><b>Enviar</b></button>
+        </div>
+      </form>
+    </div>
+    </form>
+    <footer style="margin-top: 50px;">
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        © 2020 Copyright:ADSI 2339490 - Developers Team<br>
+        <a class="text-dark" href="http://centrodecomercioyturismo.blogspot.com/" target="blanck">SENA</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
